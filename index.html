@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Custom Face</title>
+</head>
+
+<body>
+
+    <div class="row-one">
+        <button onclick="changeTop('no-hat')">NO HAT</button>
+        <img id="topHead" src="/images/custom-face-no-hat.jpg" alt="Top head">
+        <button onclick="changeTop('hat')">HAT</button>
+    </div>
+
+    <div class="row-one">
+        <button onclick="changeMiddle('no-mustache')">NO MUSTACHE</button>
+        <img id="midHead" src="/images/custom-face-no-mustache.jpg" alt="Middle head">
+        <button onclick="changeMiddle('mustache')">MUSTACHE</button>
+    </div>
+
+    <div class="row-one">
+        <button onclick="changeBottom('smile')">SMILE</button>
+        <img id="botHead" src="/images/custom-face-smile.jpg" alt="bottom head">
+        <button onclick="changeBottom('frown')">FROWN</button>
+    </div>
+
+
+    <script>
+        function changeTop(top) {
+            let topImage = document.getElementById('topHead');
+            topImage.src = `/images/custom-face-${top}.jpg`;
+        }
+
+        function changeMiddle(mid) {
+            let midImage = document.getElementById('midHead');
+            midImage.src = `/images/custom-face-${mid}.jpg`;
+        }
+        function changeBottom(bot) {
+            let botImage = document.getElementById('botHead');
+            botImage.src = `/images/custom-face-${bot}.jpg`;
+        }
+    </script>
+
+</body>
+
+</html>
