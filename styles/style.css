@@ -1,6 +1,27 @@
+body {
+
+background-color: #a4d4c4;
+
+}
+
 button {
     margin: 0 50px;
-    width: 100px;
+    width: 112px;
+    color: #71a996;
+    border-width: 0px;
+    background-color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 9px 0px;
+}
+
+button:hover {
+    background-color: #89bfad;
+    color: #a4d4c4;
+}
+
+button:focus {
+    outline: none;
 }
 
 img {
